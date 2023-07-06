@@ -1,6 +1,6 @@
 @Library('roboshop') _
 
-env.component="params"
+env.component="aws-params"
 env.app_lang="docker"
 
 
