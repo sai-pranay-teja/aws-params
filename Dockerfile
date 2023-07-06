@@ -1,4 +1,4 @@
 FROM amazon/aws-cli
 RUN yum install jq -y
-COPY docker/run.sh /
+COPY run.sh /
 ENTRYPOINT [ "bash", "run.sh" ]
