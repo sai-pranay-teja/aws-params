@@ -4,3 +4,4 @@ for var in $(echo $1 | sed -e 's/,/ /g') ; do
   value=$(aws ssm get-parameter --name $parameter --with-decryption | jq '.Parameter.Value' | sed -e 's/"//g')
 done
 
+
